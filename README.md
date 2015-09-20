@@ -1,3 +1,3 @@
-# learning-python
+# code-learning
 
-some code for learning Python
+some code for learning.
