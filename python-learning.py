@@ -87,3 +87,38 @@ set_example_temp.clear()
 
 
 
+## control flow
+
+print('\n\nAbout control flow:\n')
+
+# choice: if-else statements
+condition_true = True
+condition_false = False
+if condition_false:
+    print('condition is false!')
+elif condition_false and condition_true:
+    print('condition is', condition_false and condition_true)
+elif condition_true:
+    print('condition is true!')
+else:
+    print('else condition')
+
+# loops: for
+sum = 0
+for x in range(101):
+    sum = sum + x
+print('loops for:', sum)
+
+# loops: while
+sum = 0
+n = 100
+while n > 0:
+    sum = sum + n
+    n = n - 1
+print('loops while:', sum)
+
+## end control flow
+
+
+
+## 
