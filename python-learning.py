@@ -121,4 +121,17 @@ print('loops while:', sum)
 
 
 
-## 
+## function
+
+def _abs(x):
+    if not isinstance(x, (int, float)):
+        raise TypeError('bad operand type')
+    if x >= 0:
+        return x
+    else:
+        return -x
+
+print(_abs(10), _abs(-10))
+print(_abs('10'))
+
+## end function
