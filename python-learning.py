@@ -117,6 +117,10 @@ while n > 0:
     n = n - 1
 print('loops while:', sum)
 
+print('\nitetate:\n')
+for i, value in enumerate(['A', 'B', 'C']):
+    print(i, value)
+
 ## end control flow
 
 
@@ -131,7 +135,38 @@ def _abs(x):
     else:
         return -x
 
-print(_abs(10), _abs(-10))
-print(_abs('10'))
+print('abs:', _abs(10), _abs(-10))
+# print(_abs('10')) # will throw a error
+
+# variable arguments
+def _sum_variable_arguments(*numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n
+    return sum
+
+print(_sum_variable_arguments(1, 2, 3, 4, 5))
+
+# keywords arguments
+def _people_info_keywords_arguments(name, gender, **kw):
+    print('name:', name, 'gender:', gender, 'other:', kw)
+
+_people_info_keywords_arguments('Mike', 'Male', job='developer')
 
 ## end function
+
+
+
+## slice
+
+_slice_list = list(range(100))
+print(_slice_list[:])
+print(_slice_list[::-1])
+print(_slice_list[:10])
+print(_slice_list[-10:])
+print(_slice_list[-10::2])
+
+## end slice
+
+
+
