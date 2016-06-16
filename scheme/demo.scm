@@ -1,0 +1,28 @@
+(define (sqrt x)
+  (define (average n1 n2)
+    (/ (+ n1 n2) 2))
+  (define (square guess)
+    (* guess guess))
+  (define (improve guess)
+    (average guess (/ x guess)))
+  (define (good-enough? guess)
+    (< (abs (- (square guess) x)) 0.001))
+  (define (try guess)
+    (if (good-enough? guess)
+        (round guess)
+        (try (improve guess))))
+  (try 1))
+
+(sqrt 36)
+
+;; (define (average n1 n2)
+;;   (/ (+ n1 n2) 2))
+;; (average 2 4)
+
+;; (define (square guess)
+;;   (* guess guess))
+;; (square 5)
+
+;; (define (improve guess x)
+;;   (average guess (/ x guess)))
+;; (improve 1 5)
