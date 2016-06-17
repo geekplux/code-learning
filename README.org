@@ -3,6 +3,7 @@
 一些学习笔记和代码。
 
 部分笔记放在了[[https://geekplux.github.io/wiki][我的 wiki]]。
+[[./SICP-exercises][SICP 的习题解]] 解法有很多种，我的解法不一定是最优解:)
 
 ** SICP notes
 *** 第一章 构造过程抽象
