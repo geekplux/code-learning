@@ -1,0 +1,7 @@
+* Programming
+
+一些学习笔记和代码。
+
+部分笔记放在了[[https://geekplux.github.io/wiki][我的 wiki]]。
+
+** SICP notes
