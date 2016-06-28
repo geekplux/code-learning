@@ -1,4 +1,3 @@
-;; 求平方根
 (define (sqrt x)
   (define (average n1 n2)
     (/ (+ n1 n2) 2))
@@ -6,10 +5,10 @@
     (* guess guess))
   (define (improve guess)
     (average guess (/ x guess)))
-  (define (good-enough? guess)
+  (define (good-enough? guess new-guess)
     (< (abs (- (square guess) x)) 0.001))
   (define (try guess)
-    (if (good-enough? guess)
+    (if (good-enough? guess (improve guess))
         (round guess)
         (try (improve guess))))
   (try 1))
